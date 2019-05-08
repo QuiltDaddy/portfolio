@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Patrick Quilty - Full Stack Developer</title>
+    <link rel="stylesheet" type="text/css" src="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Cinzel|Julius+Sans+One|Montserrat+Alternates|Neucha|Orbitron|Press+Start+2P|Wendy+One" rel="stylesheet">
+  </head>
+  <body id="home">
+    <nav role="navigation" class="nav" >
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header role="banner">
+      <img class="headshot" id="headshot" src="pictures/headshot.jpg" alt="A handsome man smiles in front of a field of trees.">
+      <section class="tagContainer">
+        <p class="tagline tagline1">Patrick</p>
+        <p class="tagline tagline2">purges</p>
+        <p class="tagline tagline3">puzzles.</p>
+      </section>
+    </header>
+    <main role="main">
+      <section class ="bio">
+        <div class="anchor1" id="bio"></div>
+        <p class="headline">I’m a fullstack developer who’s adept with<br>Git, Java, React, Node and Postgres.</p>
+        <h1>Bio</h1>
+        <p class="bioText">
+          The first program I wrote was a BAC calculator on a TI-84 Plus in high school; I was a hit at parties…  I took an elective to pursue my interest and made a Rubik’s Cube solver in Visual Basic.  After years of programming as a hobby I decided to sharpen my skills through the Web Developer Track at Bloc, of which I am a recent graduate.<br><br>
+        </p>
+        <p class="bioText">
+          I recently took a Java program of mine for teaching users how to solve a Sudoku puzzle, translated it into JS, and turned it into the project below.  I know I can figure out how to solve any stumbling block in completing projects and I have the innate desire to solve puzzles that propels me into doing just that.  I am currently Cincinnati based, but very willing to travel or work remotely.
+        </p>
+      </section>
+      <section class="portfolio">
+        <div class="anchor" id="portfolio"></div>
+        <h1>Portfolio</h1>
+        <div class="project">
+          <div class="container1">
+            <h2 class="sudoku">Sudoku Solutions</h2>
+            <img class="icon HTML5" src="pictures/icon-HTML5.png" alt="HTML5 icon">
+            <img class="icon CSS3" src="pictures/icon-CSS3.png" alt="CSS3 icon">
+            <img class="icon" src="pictures/icon-JS.png" alt="JS icon">
+            <img class="icon" src="pictures/icon-jQuery.png" alt="jQuery icon">
+          </div>
+          <p class="portText">
+            This application takes any given Sudoku and walks the user through the logic of solving it with detailed explanations at each step.  It also has a feature to generate a random new puzzle of a specified difficulty.  Accessible to A11y users, keyboard users, mouse users, and phone users.  Also included is a brute force solve method.
+          </p>
+          <div class="container2">
+            <div class="container3">
+              <label class="linkText repo">Repo:</label>
+              <a href="https://github.com/QuiltDaddy/Sudoku-Website"target="_blank"><img class="iconSmall" src="pictures/icon-gitHub.png" alt="GitHub icon"></a>
+            </div>
+            <div class="container4">
+              <label class="linkText liveApp">Live App:</label>
+            </div>
+          </div>
+          <a href="https://quiltdaddy.github.io/Sudoku-Website/" target="_blank"><img class="sudokuImg portImg" src="pictures/sudoku-screen.png" alt="A screenshot of a sudoku solving application."></a>
+        </div>
+        <div class="project">
+          <div class="container1">
+            <h2 class="yoga">Yoga Quiz</h2>
+            <img class="icon HTML5" src="pictures/icon-HTML5.png" alt="HTML5 icon">
+            <img class="icon CSS3" src="pictures/icon-CSS3.png" alt="CSS3 icon">
+            <img class="icon" src="pictures/icon-JS.png" alt="JS icon">
+            <img class="icon" src="pictures/icon-jQuery.png" alt="jQuery icon">
+          </div>
+          <p class="portText">
+            A program to demonstrate basic website functionality and accessibility.
+          </p>
+          <div class="container2">
+            <div class="container3">
+              <label class="linkText repo">Repo:</label>
+              <a href="https://github.com/QuiltDaddy/Yoga-Quiz"target="_blank"><img class="iconSmall" src="pictures/icon-gitHub.png" alt="GitHub icon"></a>
+            </div>
+            <div class="container4">
+              <label class="linkText liveApp">Live App:</label>
+            </div>
+          </div>
+          <a href="https://quiltdaddy.github.io/Yoga-Quiz/" target="_blank"><img class="yogaImg portImg" src="pictures/yoga-screen.png" alt="A screenshot of the Yoga Quiz application."></a>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="anchor" id="contact"></div>
+        <h1>Contact</h1>
+        <a href="mailto:p.quilty@yahoo.com"target="_blank"><img class="iconSmall2" src="pictures/icon-email.png" alt="Email icon"></a>
+        <a href="https://github.com/QuiltDaddy"target="_blank"><img class="iconSmall2" src="pictures/icon-gitHub.png" alt="GitHub icon"></a>
+        <a href="https://www.linkedin.com/in/patrick-quilty-636b26184/"target="_blank"><img class="iconSmall2" src="pictures/icon-linkedIn.png" alt="LinkedIn icon"></a>
+        <a href="solve:Math-Problem-Of-The-Day"target="_blank"><img class="secret iconSmall2" src="pictures/icon-question-mark.png" alt="Question Mark"></a>
+      </section>
+    </main>
+    <footer role="contentinfo"></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

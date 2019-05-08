@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0px;
+  text-align: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header{
+  height: 0px;
+}
+
+.nav {
+  position: fixed;
+  background:#F0FFFF;
+  width: 100%;
+  height: 6vw;
+  z-index: 10;
+}
+
+ul {
+  width: 55%;
+  height: 6vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  float: right;
+}
+
+li > a {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  font-size: calc(5px + 1.75vw);
+  color: #00494A;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #aaa;
+}
+
+li > a:focus, li > a:hover {
+  text-decoration: underline;
+  color: rgb(7, 16, 92);
+}
+
+.anchor1 {
+  display: block;
+  position: relative;
+  top: -10vw;
+  visibility: hidden;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -6vw;
+  visibility: hidden;
+}
+  
+.headshot {
+  position: absolute;
+  right: 0px;
+  top: 6vw;
+  width: 100%;
+  height: calc(900vw / 16);
+}
+
+.tagContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: calc(685vw / 16);
+  left: 52.5%;
+  width: 45%;
+  z-index: 9;
+}
+
+.tagline {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  font-size: 4vw;
+  color: #88FFFA;
+}
+
+.tagline1 {
+  align-self: flex-start;
+}
+
+.tagline2 {
+  position: relative;
+  right: 0.75vw;
+}
+
+.tagline3 {
+  align-self: flex-end;
+}
+
+main {
+  position: relative;
+  top: 62.25vw;
+  background-color: #88FFFA;
+  border-style: solid;
+  border-width: 2vw;
+  border-color: #00C3C6 #00494A #00C3C6 #00494A;
+}
+
+.headline {
+  font-size: 3vw;
+  line-height: 6vw;
+  font-family: 'Orbitron', sans-serif;
+  margin: 2vw;
+  background: white;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+}
+
+h1 {
+  font-size: 4vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.bioText, .portText {
+  font-size: calc(4px + 1.5vw);
+  width: 70%;
+  text-align: left;
+  text-indent: 4.5vw;
+  line-height: 4vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container1 {
+  display: flex;
+  text-align: left;
+  position: relative;
+  left: 15%;
+  width: 70%;
+}
+
+h2 {
+  font-size: calc(5px + 2vw);
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: left;
+}
+
+.icon {
+  width: calc(12px + 2vw);
+  height: calc(12px + 2vw);
+  margin-left: 2px;
+}
+
+.HTML5 {
+  height: calc(12px + 2vw);
+  width: calc(13.5px + 2vw);
+}
+
+.CSS3 {
+  height: calc(12px + 2vw);
+  width: calc(9.5px + 2vw);
+}
+
+.sudoku {
+  width: calc((5px + 2vw) * 8.85);
+}
+
+.container2 {
+  text-align: left;
+  position: relative;
+  left: 15%;
+  width: 70%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.linkText {
+  font-size: calc(4px + 1.5vw);
+  line-height: 4vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+  vertical-align: middle;
+}
+
+.repo {
+  width: calc((4px + 1.5vw) * 2.85);
+}
+
+.liveApp {
+  width: calc((4px + 1.5vw) * 4.62);
+}
+
+.iconSmall {
+  width: calc(6px + 1.5vw);
+  height: calc(6px + 1.5vw);
+  vertical-align: middle;
+  margin-left: .5vw;
+}
+
+.portImg {
+  width: 70%;
+  height: calc(776px / 60vw);
+  margin-bottom: 4vw;
+}
+
+.contact {
+  margin-bottom: 3vw;
+}
+
+.iconSmall2 {
+  width: calc(6px + 1.5vw);
+  height: calc(6px + 1.5vw);
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.mathProblem {
+  position: relative;
+  top: 62.25vw;
+  text-align: center;
+}
+
+.mathText {
+  font-size: calc(4px + 1.5vw);
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.mathImage {
+  width: calc((4px + 1.5vw) * 13.7);
+}
+
+.guess {
+  font-size: calc(4px + 1.5vw);
+  width: calc((4px + 1.5vw) * 7);
+  margin: 1vw;
+}
+
+.check {
+  font-size: calc(4px + 1.5vw);
+  width: calc((4px + 1.5vw) * 3);
+  margin-left: 2vw;
+}
+
+.mathAnswer {
+  position: relative;
+  top: 62.25vw;
+  text-align: center;
+}
+
+.answerText {
+  font-size: calc(4px + 1.5vw);
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+  .icon {
+    width: calc(5px + 2vw);
+    height: calc(5px + 2vw);
+  }
+
+  .HTML5 {
+    height: calc(5px + 2vw);
+    width: calc(6px + 2vw);
+  }
+
+  .CSS3 {
+    height: calc(5px + 2vw);
+    width: calc(4.2px + 2vw);
+  }
+}
