@@ -256,6 +256,24 @@ h2 {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
+.extra {
+  margin-top: 3vw;
+  width: 68%;
+}
+
+figcaption {
+  font-size: calc(4px + 1.5vw);
+  background-color: #222;
+  color: #fff;
+  /* font: italic smaller sans-serif; */
+  padding: 3px;
+  text-align: left;
+  width: calc(68% - 3px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vw;
+}
+
 @media screen and (max-width: 400px) {
   .icon {
     width: calc(5px + 2vw);
