@@ -49,7 +49,7 @@ li > a:focus, li > a:hover {
 .anchor1 {
   display: block;
   position: relative;
-  top: -10vw;
+  top: calc(-10vw + 1px);
   visibility: hidden;
 }
 
@@ -101,10 +101,11 @@ li > a:focus, li > a:hover {
 main {
   position: relative;
   top: 62.25vw;
-  background-color: #88FFFA;
+  background-color: #8fccc9;
   border-style: solid;
   border-width: 2vw;
   border-color: #00C3C6 #00494A #00C3C6 #00494A;
+  border-bottom: 0px;
 }
 
 .headline {
@@ -209,10 +210,6 @@ h2 {
   margin-bottom: 4vw;
 }
 
-.contact {
-  margin-bottom: 3vw;
-}
-
 .iconSmall2 {
   width: calc(6px + 1.5vw);
   height: calc(6px + 1.5vw);
@@ -220,9 +217,18 @@ h2 {
   margin-right: 1vw;
 }
 
+.copy {
+  position: absolute;
+  left: 8px;
+  bottom: 10px;
+  font-size: calc(1.4px + 1.5vw);
+  line-height: 4vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
 .mathProblem {
   position: relative;
-  top: 62.25vw;
+  top: 61.25vw;
   text-align: center;
 }
 
@@ -249,7 +255,7 @@ h2 {
 
 .mathAnswer {
   position: relative;
-  top: 62.25vw;
+  top: 61.25vw;
   text-align: center;
 }
 
@@ -275,10 +281,25 @@ figcaption {
   margin-bottom: 2vw;
 }
 
+.contact {
+  position: relative;
+  top: 60.25vw;
+  border: 1px solid black;
+  font-size: calc(4px + 1.5vw);
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: #8fccc9;
+  border-width: 2vw;
+  border-color: #00C3C6 #00494A #00C3C6 #00494A;
+  padding-bottom: 2vw;
+  border-top: 0px;
+}
+
 @media screen and (max-width: 400px) {
   .icon {
     width: calc(5px + 2vw);
     height: calc(5px + 2vw);
+    position: relative;
+    top: 2px;
   }
 
   .HTML5 {

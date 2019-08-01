@@ -1,5 +1,5 @@
-function writeFooter() {
-  $('footer').html(`
+function writeMath() {
+  $('.math').html(`
     <section class="mathProblem" id="mathProblem">
       <p class="mathText">You have chosen a question.  I hope you studied.<br>What is the product of the 2 y-intercepts<br>of the circle with the equation:<br></p>
       <img class="mathImage" src="pictures/math-problem.png" alt="x ^ 2 + (y - 72463.5) ^ 2 = 10721.5 ^ 2"><br>
@@ -17,6 +17,9 @@ function writeFooter() {
       <a href="https://www.smbc-comics.com/comic/2011-09-08"><figcaption>https://www.smbc-comics.com/comic/2011-09-08</figcaption></a>
     </section>
   `);
+  let year = new Date().getFullYear();
+  $('.copy').html(`&copy ${year} Patrick Quilty`);
+  // Also updates copyright year
 }
 
 function handleEvents() {
@@ -35,7 +38,7 @@ function handleEvents() {
 
   $('.maths').on('click', '.check', function(event) {
     event.preventDefault();
-    if ($(`.guess`).val() == "5136008270" || $(`.guess`).val() == "5,136,008,270" || $(`.guess`).val() == "513 600 8270" || $(`.guess`).val() == "(513)600-8270") {
+    if ($(`.guess`).val() == "5136008270" || $(`.guess`).val() == "5,136,008,270" || $(`.guess`).val() == "513 600 8270" || $(`.guess`).val() == "(513)600-8270" || $(`.guess`).val() == "(513) 600-8270") {
       $(`.phone`).show();
       // let e = $(`.phone`);
       let e = document.getElementById("phone");
@@ -43,20 +46,20 @@ function handleEvents() {
       $(`.mathAnswer`).slideToggle(500);
       setTimeout(function (){
         document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });
-        $(`.guess`).val("(513)600-8270");
+        $(`.guess`).val("(513) 600-8270");
       }, 500); // Wait until the bottom is fully loaded to scroll down
       
       setTimeout(function (){
         e.style.backgroundColor = "";
       }, 1500); // Set delay to reverse highlight too
     } else {
-      alert("Incorrect, try again.");
+      alert("You died.  Please, try again.");
     }
   }); // Handles check button click
 }
 
 function initialSetup() {
-  writeFooter();
+  writeMath();
   handleEvents();
   $(`.mathProblem`).hide();
   $(`.mathAnswer`).hide();
